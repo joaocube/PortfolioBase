@@ -1,0 +1,154 @@
+.projetos-bg {
+  height: auto;
+  padding: 60px 0px;
+  background-size: cover;
+  background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6tKup0qYrnNHSifkcduSmm90DD-_3RlYEupCFsVMLIo7DH_7Z5W3dU-1ne2CQtJDSjhPQCY17MzkhDJEt5WEE9k8yIZP5VKK4xtaj2CTFUTw4hxxzkKKH-ERhxsWtblrJTvvXs6XSjksL5XBFHF1FfBUxCn12nABmG-FTOiuikYfVVZ7et7yLWRqjGZWC/s16000/bg-projects.webp");
+}
+
+.projetos-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+  text-align: center;
+}
+.projetos-container p {
+  margin-top: 20px;
+}
+
+.projetos-conteudo {
+  max-width: 1600px;
+  margin-top: 60px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  gap: 20px;
+}
+.cards :nth-child(2) {
+  transition-delay: 300ms;
+}
+.cards :nth-child(3) {
+  transition-delay: 600ms;
+}
+.cards .card-item {
+  padding: 20px;
+  border: 4px solid var(--cor-1);
+  background-color: var(--cor-0);
+  max-width: 440px;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+.card-item .area-imagem {
+  overflow: hidden;
+  padding: 20px;
+  height: 360px;
+  margin-bottom: 20px;
+  border: 4px solid var(--cor-1);
+  background-color: var(--cor-4);
+}
+.area-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.card-item .area-text {
+  margin: 10px auto;
+  max-width: 300px;
+}
+
+.card-item .area-button {
+  width: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.area-button button {
+  cursor: pointer;
+  min-width: 130px;
+  border: 4px solid var(--cor-1);
+  box-shadow: 4px 4px 0px var(--cor-1);
+  background-color: var(--cor-4);
+  padding: 10px 20px;
+  transition: 0.3s ease-in-out;
+}
+.area-button button:hover {
+  box-shadow: 0px 0px 0px var(--cor-1);
+}
+.area-button .preview {
+  background-color: var(--cor-8);
+  transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 1200px) {
+  .projetos-bg {
+    height: auto;
+    padding-top: 60px;
+  }
+  .projetos-conteudo {
+    max-width: 1600px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .cards .card-item {
+    margin: 0px 10px;
+    max-width: 400px;
+    height: auto;
+    text-align: center;
+  }
+  .card-item .area-imagem {
+    overflow: hidden;
+    margin: 10px;
+    width: auto;
+    height: 280px;
+  }
+  .card-item .area-imagem img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .projetos-bg {
+    height: auto;
+  }
+  .cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cards .card-item {
+    margin: 0px 10px;
+    width: auto;
+    height: auto;
+    text-align: center;
+  }
+  .card-item .area-imagem {
+    overflow: hidden;
+    margin: 10px;
+    width: auto;
+    height: 290px;
+  }
+  .card-item .area-text h1 {
+    font-size: 1.5rem;
+  }
+  .card-item .area-text p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .card-item .area-imagem {
+    height: 250px;
+  }
+}

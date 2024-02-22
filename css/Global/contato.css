@@ -1,0 +1,105 @@
+.contato-bg {
+  margin: 200px auto;
+  height: auto;
+  overflow: hidden;
+  background-color: var(--cor-4);
+}
+.contato-container {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--cor-6);
+  border: 4px solid var(--cor-1);
+  box-shadow: 4px 8px 0px var(--cor-1);
+  padding: 20px 0px;
+}
+/* RETANGULO BRANCO OCM 2 ITENS */
+.contato-conteudo .card-contato {
+  margin: 20px auto;
+  padding: 40px 20px;
+  width: 400px;
+  display: flex;
+  background-color: var(--cor-4);
+  border: 4px solid var(--cor-1);
+  box-shadow: 4px 4px 0px var(--cor-1);
+}
+.card-contato .item-contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: auto;
+  transition-delay: 300ms;
+}
+.item-contato a {
+  cursor: pointer;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item-contato p {
+  border-bottom: 1px solid var(--cor-6);
+  transition: 0.2s linear;
+}
+.card-contato .item-contato p:hover {
+  color: var(--cor-1);
+  border-bottom: 1px solid var(--cor-8);
+}
+@media (max-width: 1200px) {
+  .contato-conteudo .card-contato {
+    width: 400px;
+  }
+}
+
+@media (max-width: 800px) {
+  .contato-bg {
+    height: auto;
+    margin: 0;
+    padding: 100px 0px 150px 0px;
+  }
+  .contato-container {
+    height: auto;
+    margin: 0px 20px;
+    padding: 20px 0px;
+  }
+  .contato-conteudo .card-contato {
+    margin: 20px 40px;
+    padding: 40px 20px;
+    width: auto;
+  }
+  .item-contato p {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .contato-bg {
+    height: auto;
+    margin: 0;
+    padding: 100px 0px 150px 0px;
+  }
+  .contato-container {
+    margin: 10px;
+    box-shadow: 4px 4px 0px var(--cor-1);
+  }
+  .contato-conteudo .card-contato {
+    margin: 20px;
+    padding: 20px;
+    width: auto;
+  }
+  .text-area h1 {
+    font-size: 2rem;
+  }
+  .item-contato p {
+    font-size: 0.7rem;
+  }
+  .item-contato a {
+    cursor: pointer;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}

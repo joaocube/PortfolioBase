@@ -1,0 +1,196 @@
+.sobre-bg {
+  background-size: cover;
+  background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdCAXZDCWNbW9sgRvumpl0hDbmuxlWNRXmbWrqJ9VnZ8T2DFVr5JWzhsjiTMWxLxoHFJz57he3Mfq345waoJLvWvYmxSPvMS8hjbkbj8VfCjOnJRyh4qCUO6PFSU63T3JkTEBmaQpLB0KdhxqkVjMhf3E6a4z4v7lYf96GvLQ35gQ9rg6AX0SaXpMO6V9H/s16000/bg-about2.webp");
+  margin-left: auto;
+  margin-right: auto;
+  height: 90vh;
+  padding-top: 100px;
+}
+
+.sobre-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+.text-area {
+  text-align: center;
+}
+.sobre-conteudo {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin-top: 80px;
+  gap: 20px;
+}
+.sobre-conteudo .imagem-area {
+  overflow: hidden;
+  width: 600px;
+  height: 400px;
+  box-shadow: 4px 4px 0px var(--cor-1);
+  border: 4px solid var(--cor-1);
+  background-size: cover;
+  background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0-yjXn8Aln-xxHCILzsk1iDVgzpH6cTFCjXXzd-K5LIfwQaVkFXj3AICGFrzBmHZMy-0FAuQmn_AtCoJRzH81qLhbV8221_eD3ZKbKUOcIH2YQ0hhxXqUZe4nsVv38HOj-UGTSN45s4oNfPy5QT7CbqSAEsvVWD54ezmPE3czzh3OSrE87F2DVY_GNBqa/s16000/bg-profile2.png");
+}
+.imagem-area img {
+  width: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+.sobre-info {
+  margin-top: 70px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-area {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.card-area .card-item {
+  padding: 30px 50px;
+  text-align: center;
+  border: 4px solid var(--cor-1);
+  background-color: var(--cor-0);
+  width: 100%;
+  height: 100px;
+  margin-bottom: 20px;
+}
+.sobre-info .text-sobre {
+  flex-direction: column;
+  width: auto;
+}
+.sobre-info .skills {
+  width: 100%;
+  height: 100px;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skills img {
+  background-color: var(--cor-6);
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+}
+.skills img:hover {
+  padding: 20px 10px;
+}
+
+@media (max-width: 1200px) {
+  .sobre-container .setabaixo {
+    position: absolute;
+    right: 60px;
+    bottom: -80px;
+  }
+  .sobre-conteudo {
+    margin-top: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .sobre-conteudo .imagem-area {
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+  }
+  .sobre-info {
+    padding: 10px 60px;
+    margin-top: 0px;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-area {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .card-area .card-item {
+    padding: 20px 30px;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  .card-item h3 {
+    font-size: 1rem;
+  }
+  .card-item p {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 800px) {
+  .sobre-bg {
+    height: auto;
+    padding-top: 50px;
+    margin-bottom: 40px;
+  }
+  .sobre-info {
+    padding: 0px 20px;
+    margin-top: 0px;
+  }
+  .card-area {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .card-area .card-item {
+    height: 100px;
+    padding: 20px;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  .card-item h1 {
+    font-size: 1rem;
+  }
+  .card-item p {
+    font-size: 0.72rem;
+  }
+  .sobre-info .skills {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    border: none;
+  }
+  .skills img {
+    width: 26px;
+    height: 26px;
+    background-color: var(--cor-6);
+    border-radius: 8px;
+    padding: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .sobre-bg {
+    height: auto;
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdCAXZDCWNbW9sgRvumpl0hDbmuxlWNRXmbWrqJ9VnZ8T2DFVr5JWzhsjiTMWxLxoHFJz57he3Mfq345waoJLvWvYmxSPvMS8hjbkbj8VfCjOnJRyh4qCUO6PFSU63T3JkTEBmaQpLB0KdhxqkVjMhf3E6a4z4v7lYf96GvLQ35gQ9rg6AX0SaXpMO6V9H/s16000/bg-about2.webp");
+  }
+  .sobre-container .text-area h1 {
+    font-size: 1.5rem;
+  }
+  .sobre-conteudo {
+    margin-top: 20px;
+  }
+  .sobre-conteudo .imagem-area {
+    width: 250px;
+    height: 170px;
+  }
+  .card-area {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .card-area .card-item {
+    padding: 10px;
+  }
+  .skills img {
+    width: 20px;
+    height: 20px;
+  }
+}

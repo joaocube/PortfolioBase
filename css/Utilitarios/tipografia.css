@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@200;400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
+
+.font1-light-Pp {
+  font: 200 1.1rem/1.35 "Poppins", sans-serif;
+}
+.font1-normal-Rp {
+  font: 400 1rem/1.35 "Roboto", sans-serif;
+}
+.font1-normal2-Pp {
+  font: 400 1rem/1.5 "Poppins", sans-serif;
+}
+.font1-normal3-Pp {
+  font: 400 1rem/1.1 "Poppins", sans-serif;
+}
+.font1-normal-Pp {
+  font: 400 1.2rem/1.35 "Poppins", sans-serif;
+}
+.font1-bold-Pp {
+  font: 600 1rem/1.35 "Poppins", sans-serif;
+}
+.font2-bold-Pm {
+  font: 600 1.5rem/1.35 "Poppins", sans-serif;
+}
+.font2-bold-Pg {
+  font: 600 2rem/1.35 "Poppins", sans-serif;
+}
+
+.font1-normal-R {
+  font: 500 1rem/1.35 "Roboto", sans-serif;
+}
+.font1-normal2-R {
+  font: 500 2.4rem/1.35 "Roboto", sans-serif;
+}
+.font1-bold-R {
+  font: 700 1rem/1.35 "Roboto", sans-serif;
+}
+.font1-bold2-R {
+  font: 700 3rem/1.35 "Poppins", sans-serif;
+}

@@ -1,0 +1,12 @@
+/* GLOBAL STYLES */
+@import "./global.css";
+@import "./header.css";
+@import "../Utilitarios/cores.css";
+@import "../Utilitarios/tipografia.css";
+@import "../Home/introducao.css";
+@import "../Home/caracteristicas.css";
+@import "../Home/sobre.css";
+@import "../Home/projetos.css";
+@import "../Home/experiencia.css";
+@import "./contato.css";
+@import "./footer.css";

@@ -1,0 +1,227 @@
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.introducao-bg {
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEil9QO6dxkcbSnjBtEDTe3eMTsa_L2AQ8FygPqTCLVU1FN7vgo7rryTUWLaqpTjEvY_QXzLIbVJKx3eum40lAVjz6THMQYH0KV_r3FWCkJ0OEG-baW0mN7ucOV4fe4n2KyV59rMIR_42k7zybM5bze2gUs2cfZE4ZTLW-vw4uDtow3cD38L2lmmNshUDdaJ/s16000/bg-intro.webp");
+  overflow: hidden;
+}
+
+.introducao-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  margin-top: 70px;
+  padding-bottom: 100px;
+  border: 4px solid var(--cor-1);
+  background-color: var(--cor-4);
+}
+.introducao-container .barra {
+  height: 100px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 0px 20px;
+  gap: 15px;
+  background: linear-gradient(to right, var(--cor-5), var(--cor-6));
+  border-bottom: 4px solid var(--cor-1);
+}
+
+/* CONTAINER DE TUDO */
+.profile-conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 80px;
+}
+/* QUADRO DA IMAGEM PROFILE */
+.quadro1 {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  box-shadow: 4px 4px 0px var(--cor-1);
+  border: 4px solid var(--cor-1);
+  background-size: 100%;
+  background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1-XGDoiWH1CFAIDUQ-r7DfZ-MrtBgK9VkWmTz1bWgPrrUWFeZStv1Ys27tMOg0X1KPkpwl4oV5b2WrmR92uuJBo49CrzFcKgk335ryS2gmtwpPy1n_lGjmBotPGfzSOjqkmG_-V9o0HA67vKaLUaP8F13IXoWqn0rl4y4cKPikU2d5xHLoVEd-jMNqMpS/s16000/bg-profile1.png");
+}
+.quadro1 img {
+  width: 100%;
+  margin-top: 40px;
+  scale: 1.2;
+  filter: grayscale(90%);
+}
+#tooltip {
+  display: none;
+  position: absolute;
+  background-color: var(--cor-2);
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+/* QUADRO COM DESCRICAO BREVE */
+.quadro2 {
+  width: 400px;
+  text-align: center;
+}
+/* CONTAINER DOS BOTOES */
+.quadro2 .btn-area {
+  max-width: 350px;
+  padding: 10px;
+  margin: 0 auto;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* SO ESTILO BOTAO DA INTRODUCAO */
+.btn-area button {
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  box-shadow: 4px 4px 0px var(--cor-1);
+  cursor: pointer;
+  background-color: var(--cor-4);
+  transition: 0.3s ease-in-out;
+  border: 1px solid var(--cor-1);
+}
+.btn-area button:hover {
+  box-shadow: 0px 0px 0px var(--cor-1);
+}
+.btn-area button img {
+  margin-right: 5px;
+}
+/* CONTAINER DE ICONES */
+.quadro2 .icons-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+.icons-area a {
+  margin-right: 10px;
+}
+.title {
+  font-family: "Pacifico", cursive;
+}
+.titleMain {
+  font-family: "Pacifico", cursive;
+}
+.titleMain::after {
+  content: "|";
+  opacity: 1;
+  margin-left: 5px;
+  display: inline-block;
+  animation: blink 0.8s infinite;
+}
+
+@media (max-width: 800px) {
+  .introducao-bg {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  .introducao-container {
+    height: 600px;
+    margin: 20px;
+    padding-bottom: 70px;
+  }
+  .introducao-container .barra {
+    height: 40px;
+    gap: 10px;
+  }
+  .profile-conteudo {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 40px;
+  }
+  .quadro1 {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+  }
+  .quadro1 img {
+    width: 300px;
+    height: 300px;
+  }
+  .quadro2 {
+    margin: 0 auto;
+    width: 350px;
+    text-align: center;
+    position: relative;
+  }
+  .quadro2 h3 {
+    font-size: 1.5rem;
+  }
+  .quadro2 .title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .introducao-bg {
+    height: auto;
+    overflow: hidden;
+  }
+  .introducao-container {
+    height: auto;
+    margin: 30px 10px;
+  }
+  .quadro1 {
+    width: 270px;
+    height: 270px;
+  }
+  .quadro1 img {
+    width: 100%;
+    height: 100%;
+  }
+  .quadro2 p {
+    font-size: 1.5rem;
+  }
+  .quadro2 .titleMain {
+    line-height: 1.1;
+    font-size: 2.3rem;
+  }
+  .quadro2 .title {
+    font-size: 2rem;
+  }
+  .btn-area button {
+    width: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .introducao-bg {
+    height: auto;
+    overflow: hidden;
+  }
+  .introducao-container {
+    height: auto;
+    margin: 20px 10px;
+    padding-bottom: 30px;
+  }
+  .profile-conteudo {
+    gap: 20px;
+    padding-top: 20px;
+  }
+  .quadro1 {
+    width: 270px;
+    height: 240px;
+  }
+  .quadro1 img {
+    width: 270px;
+    height: auto;
+  }
+}
